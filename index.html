@@ -6,13 +6,72 @@
     <title>Donate Bangladesh</title>
     <!-- link favicon  -->
      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- link font awsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link  google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font link  -->
+     <style>
+            .lexend {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            }
+     </style>
+     <!-- config  -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#B4F461' ,
+                'background-color':'#F9F7F3'
+              }
+            }
+          }
+        }
+      </script>
      <!-- link tailwind and daisy ui  -->
-      
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    testing
-    <h1> test </h1>
+<body class="lexend">
+    <!-- header start here  -->
+     <header class=" sticky top-0 bg-gray-50">
+        <section class="w-11/12 mx-auto">
+            <!-- nav start here  -->
+            <nav class="flex justify-between items-center  space-x-5 py-5 w-11/12 mx-auto ">
+                <!-- blog  -->
+                <div>
+                    <button class="btn btn bg-lime-300   font-bold">Blog</button>
+                </div>
+                <!-- donnat   -->
+                <div class="flex justify-center items-center space-x-2">
+                   <a href="#" class="w-10 h-10">
+                    <img src="./assets/logo.png" alt="logo">
+                   </a>
+    
+                    <a href="#">
+                        <h4 class="font-bold">Donate Bangladesh</h4>
+                    </a>
+                </div>
+                <!-- amount  -->
+                <div>
+                    <p class="flex justify-center items-center space-x-3">
+                        <span>
+                            <img src="./assets/coin.png" alt="">
+                        </span>
+                        <span class="font-bold">5500 BDT</span>
+                    </p>
+                </div>
+            </nav>
+         </section>
+     </header>
+     
+     
+     <footer></footer>
 </body>
 </html>
