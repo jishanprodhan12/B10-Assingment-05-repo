@@ -40,22 +40,22 @@
 </head>
 <body class="lexend">
     <!-- header start here  -->
-     <header class=" sticky top-0 bg-background-color">
-        <section class="w-11/12 mx-auto">
+     <header class=" sticky top-0   ">
+        <section class=" mx-auto bg-background-color  ">
             <!-- nav start here  -->
-            <nav class="flex justify-between items-center  space-x-5 py-5 w-11/12 mx-auto ">
+            <nav class="flex justify-between items-center  space-x-5 py-5 md:px-4 lg:px-7 w-11/12 mx-auto ">
                 <!-- blog  -->
                 <div>
                     <button class="btn bg-primary-color  font-bold">Blog</button>
                 </div>
                 <!-- donnat   -->
-                <div class="flex justify-center items-center space-x-2">
+                <div class="hidden md:flex justify-center items-center space-x-2 ">
                    <a href="#" class="w-10 h-10">
                     <img src="./assets/logo.png" alt="logo">
                    </a>
     
                     <a href="#">
-                        <h4 class="font-bold">Donate Bangladesh</h4>
+                        <h4 class="font-bold ">Donate Bangladesh</h4>
                     </a>
                 </div>
                 <!-- amount  -->
@@ -69,18 +69,19 @@
                 </div>
             </nav>
          </section>
+         <!-- donate and history btn  -->
+        <section class="flex justify-center items-center space-x-4 py-6 w-11/12 mx-auto bg-transparent backdrop-blur-lg">
+          <div>
+              <button class="btn bg-primary-color font-bold">Donation</button>
+          </div>
+          <div>
+              <button class="btn btn-outline  font-bold text-gray-500">History</button>
+          </div>
+      </section>
+      <!-- card container  -->
      </header>
      <main>
-        <!-- donate and history btn  -->
-        <section class="flex justify-center items-center space-x-4 md:my-16 w-11/12 mx-auto ">
-            <div>
-                <button class="btn bg-primary-color font-bold">Donation</button>
-            </div>
-            <div>
-                <button class="btn btn-outline  font-bold text-gray-500">History</button>
-            </div>
-        </section>
-        <!-- card container  -->
+        
        <section class="flex flex-col gap-5 w-11/12 mx-auto"
        id="donate-card-contianer" >
              <!-- card 1  Flood at Noakhali -->
