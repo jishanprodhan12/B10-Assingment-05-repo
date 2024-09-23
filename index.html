@@ -176,8 +176,23 @@
      </main>
      
      <footer class="mt-16 bg-background-color h-24">
-        
+      <!-- spical modal -->
+              <section>
+              <div id="modal" class="fixed inset-0 backdrop-blur-sm justify-center items-center z-100 hidden">
+                <div class="bg-white w-72 md:w-[500px] p-10 text-center flex flex-col gap-5 justify-center items-center rounded-2xl">
+
+                    <h1 class="font-bold text-4xl">Congrates!</h1>
+                    <img src="./assets/coin.png" alt="">
+                    <p class="font-medium">You Have Donated for Humankind</p>
+                    <h1 class="font-bold text-2xl">Successfully</h1>
+
+                    <button class="py-3 px-10 font-bold btn rounded-xl" id="modal-close-btn">close confirmation</button>
+                </div>
+              </div>
+              </section>
      </footer>
+
+
      <script src="./js/utilites.js"></script>
      <script src="./js/index.js"></script>
 </body>

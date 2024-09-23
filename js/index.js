@@ -41,6 +41,14 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
     document.getElementById('user-balance').innerText = updateUser;
     document.getElementById('input-noakhali').value = '';
     alert(noakhaliDonateInput + " TK Donate for Flood at Noakhali, Bangladesh");
+    // modal set up 
+    document.getElementById('modal').classList.remove('hidden');
+    document.getElementById('modal').classList.add('flex');
+    document.getElementById('modal-close-btn').addEventListener('click',()=>{
+    document.getElementById('modal').classList.add('hidden');
+    });
+
+
     // dyamic history noakhali
     const historyContainer = document.getElementById('history-card-container');
     const div = document.createElement('div');
@@ -78,6 +86,12 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(){
    document.getElementById('feni-balance').innerText=updateFeniBalance ;
    document.getElementById('input-feni').value = '';
    alert(feniDonateInput + " TK Donate for Flood Relief in Feni,Bangladesh");
+   // modal set up 
+   document.getElementById('modal').classList.remove('hidden');
+   document.getElementById('modal').classList.add('flex');
+   document.getElementById('modal-close-btn').addEventListener('click',()=>{
+   document.getElementById('modal').classList.add('hidden');
+   });
         // dyamic history feni
         const historyContainer = document.getElementById('history-card-container');
         const div = document.createElement('div');
@@ -118,6 +132,12 @@ document.getElementById('qouta-donate-btn').addEventListener('click',function(){
   document.getElementById('input-qouta').innerText='';
 
    alert(qoutaDonateInput + " TK Donate for Injured in the Quota Movement");
+   // modal set up 
+   document.getElementById('modal').classList.remove('hidden');
+   document.getElementById('modal').classList.add('flex');
+   document.getElementById('modal-close-btn').addEventListener('click',()=>{
+   document.getElementById('modal').classList.add('hidden');
+   });
         // dyamic history noakhali
         const historyContainer = document.getElementById('history-card-container');
         const div = document.createElement('div');
