@@ -11,3 +11,4 @@ function getValueByTextFild (id){
     resultNumber = parseFloat(result);
     return resultNumber ;
 }
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- link tailwind and daisy ui  -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+    <!--link  google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- font link  -->
+  <style>
+    .lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    }
+</style> 
+ <!-- config  -->
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#B4F461' ,
+            'background-color':'#f9f7f3'
+          }
+        }
+      }
+    }
+  </script>
+    <title>Home</title>
+</head>
+<body class="lexend">
+    <!-- nav bar start -->
+    <section>
+        <nav class="flex justify-between items-center  space-x-5 py-5 md:px-4 lg:px-7 w-11/12 mx-auto ">
+            <!-- blog  -->
+            <div>
+                <button id="home-btn" class="btn bg-primary-color  font-bold">home</button>
+            </div>
+            <!-- donnat   -->
+            <div class="hidden md:flex justify-center items-center space-x-2 ">
+               <a href="#" class="w-10 h-10">
+                <img src="./assets/logo.png" alt="logo">
+               </a>
+
+                <a href="#">
+                    <h4 class="font-bold ">Donate Bangladesh</h4>
+                </a>
+            </div>
+            <!-- amount  -->
+            <div>
+                <p class="flex justify-center items-center space-x-3">
+                    <span>
+                        <img src="./assets/coin.png" alt="">
+                    </span>
+                    <span class="font-bold" id="user-balance">5500 BDT</span>
+                </p>
+            </div>
+        </nav>
+    </section>
+    <!--! nav bar end  -->
+    <h1 class="text-3xl md:text-5xl text-center">Importent FAQ</h1>
+    <section class="w-11/12 mx-auto my-8">
+        <!-- faq div start  -->
+        <div class="w-11/12 mx-auto flex flex-col gap-4">
+
+            <!-- qn 1  -->
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked">
+                <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript?</div>
+                <div class="collapse-content">
+                    <p>
+                        The Document Object Model (DOM) is a programming interface that allows programmers to manipulate the
+                        structure, style, and content of a web page</p>
+                </div>
+            </div>
+    
+            <!-- qn2 -->
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3">
+                <div class="collapse-title text-xl font-medium">How do you find an element in the DOM?</div>
+                <div class="collapse-content">
+                    <p>The easiest way to access a single element in the DOM is by its unique ID. We can get an element by
+                        ID with the getElementById() method of the document object.</p>
+                </div>
+            </div>
+    
+            <!-- qn3 -->
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3">
+                <div class="collapse-title text-xl font-medium">What is an event delegation model, and why is is useful?
+                </div>
+                <div class="collapse-content">
+                    <p>Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.
+                        <br>
+                        1. Attaching event listeners to each child element can be inefficient, especially when you have many
+                        elements or dynamically generated elements. <br>
+                        2. With event delegation, you only need to attach one event listener to the parent element, reducing
+                        the memory footprint and improving performance.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- qn4  -->
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3">
+                <div class="collapse-title text-xl font-medium">How to manipulate attributes in JavaScript?</div>
+                <div class="collapse-content">
+                    <p>1. hasAttribute(name) – to check for existence. <br>
+                        2. getAttribute(name) – to get the value. <br>
+                        3. setAttribute(name, value) – to set the value. <br>
+                        4. removeAttribute(name) – to remove the attribute. <br>
+                        5. attributes is a collection of all attributes.</p>
+                </div>
+            </div>
+    
+        </div>
+        <!--! faq div ends  -->
+
+    </section>
+    <script src="./js/switchMain.js"></script>
+</body>
+</html>
