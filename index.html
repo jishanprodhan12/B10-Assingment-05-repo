@@ -72,16 +72,16 @@
          <!-- donate and history btn  -->
         <section class="flex justify-center items-center space-x-4 py-6 w-11/12 mx-auto bg-transparent backdrop-blur-lg">
           <div>
-              <button class="btn bg-primary-color font-bold">Donation</button>
+              <button class="btn bg-primary-color font-bold" id="donation-btn">Donation</button>
           </div>
           <div>
-              <button class="btn btn-outline  font-bold text-gray-500">History</button>
+              <button class="btn btn-outline  font-bold text-gray-500" id="history-btn">History</button>
           </div>
       </section>
       <!-- card container  -->
      </header>
      <main>
-        
+        <!-- donate section start here  -->
        <section class="flex flex-col gap-5 w-11/12 mx-auto"
        id="donate-card-contianer" >
              <!-- card 1  Flood at Noakhali -->
@@ -164,9 +164,15 @@
                </div>
              </div>
        </section>
-       <section id="history-card-container" class="hidden">
-            <h1>history</h1>
+        <!--! donate section end here  -->
+       <!-- history section start here  -->
+       <section id="history-card-container" class="hidden w-11/12 mx-auto">
+            <div id="no-donation-history" class="w-11/12 mx-auto shadow-sm rounded-lg py-3 px-5 space-y-3 border-2 my-3">
+               <h1 class="text-3xl text-red-400 font-bold text-center">No Donation Yet !</h1>
+            </div>
        </section>
+       <!--! history section ends  here  -->
+
      </main>
      
      <footer class="mt-16 bg-background-color h-24">
